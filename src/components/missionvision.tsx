@@ -1,6 +1,6 @@
 
 import { FaBullseye, FaEye, FaLightbulb } from "react-icons/fa";
-import { InfoCard } from "./infocard";
+import { InfoCard } from "../components/infocard";
 
 export function MissionVisionPhilosophie() {
   return (

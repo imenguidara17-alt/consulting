@@ -7,14 +7,14 @@ type RealisationProps={
 export function RealisationCard({ image, title }: RealisationProps) {
   return (
     <div className="relative group rounded-xl overflow-hidden shadow-lg cursor-pointer">
-      {/* Image avec taille auto et effet zoom */}
+      {/* Image*/}
       <img
         src={image}
         alt={title}
         className="w-full object-cover transition-transform duration-500 group-hover:scale-110"
       />
 
-      {/* Overlay sombre avec titre et bouton */}
+      {/* titre et bouton */}
       <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-4 text-center">
         <h3 className="text-white text-xl font-bold mb-4">{title}</h3>
         <Link

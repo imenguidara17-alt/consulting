@@ -13,7 +13,7 @@ export const ValuesSection = () => (
   <section className="py-20 bg-white">
     <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      {/* Colonne gauche - images */}
+      {/*images */}
       <div className="flex flex-col gap-6">
         {values.map((val, index) => (
           <div key={index} className="rounded-xl overflow-hidden shadow-lg">
@@ -22,7 +22,7 @@ export const ValuesSection = () => (
         ))}
       </div>
 
-      {/* Colonne droite - valeurs */}
+      {/* valeurs */}
       <div className="flex flex-col gap-8">
         <h2 className="text-3xl font-bold text-gray-900">Nos valeurs</h2>
         <div className="flex flex-col gap-6">

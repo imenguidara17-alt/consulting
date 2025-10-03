@@ -25,19 +25,16 @@ export function PortfolioPage() {
     filter === "tous" ? projets : projets.filter((p) => p.type === filter);
   return (
     <div className="bg-white min-h-screen">
-      
-      {/* Section immersive */}
        <section className="relative w-full h-[500px] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
-        {/* Image en background */}
+        {/* background */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url(${backgroundImage})`,
           }}
         ></div>
-        {/* Dégradé superposé */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-gray-800/50 to-transparent"></div>
-        {/* Contenu texte */}
+        {/* Contenu */}
         <div className="relative z-10 h-full flex items-center px-8 md:px-20">
             <div className="max-w-xl text-left text-white">
                 <h2 className="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
@@ -52,8 +49,7 @@ export function PortfolioPage() {
       </section>
       <div className="px-8 py-12">
         <FilterButtons categories={categories} filter={filter} setFilter={setFilter} />
-
-        {/* Grille projets */}
+        {/*projets */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredProjects.map((p) => (
             <ProjectCard key={p.id} title={p.title} type={p.type} image={p.image} />

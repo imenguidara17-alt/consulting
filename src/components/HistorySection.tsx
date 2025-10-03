@@ -6,9 +6,9 @@ export const HistorySection = () => (
   <section className="py-20 bg-white">
     <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      {/* Colonne gauche */}
+      {/* colonne à gauche*/}
       <div className="grid grid-cols-2 gap-6">
-        {/* 1ère colonne */}
+        {/* 1er colonne */}
         <div className="flex flex-col gap-6">
           <div className="h-60 rounded-2xl shadow-md overflow-hidden">
             <img src={image1} alt="Notre agence" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
@@ -32,7 +32,7 @@ export const HistorySection = () => (
         </div>
       </div>
 
-      {/* Colonne droite */}
+      {/* Colonne à droite */}
       <div className="flex flex-col gap-6">
         <h2 className="text-4xl font-bold text-gray-800">Notre Histoire</h2>
         <p className="text-lg text-gray-600 leading-relaxed">
