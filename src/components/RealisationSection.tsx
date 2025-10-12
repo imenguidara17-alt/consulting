@@ -2,7 +2,7 @@ import { usePortfolio } from "../context/PortfolioContext";
 import { Link } from "react-router-dom";
 
 export const RealisationsSection = () => {
-  const { projets } = usePortfolio(); // récupération des projets depuis le contexte
+  const { projets } = usePortfolio(); 
 
   return (
     <section className="py-16 bg-white">
@@ -35,8 +35,6 @@ export const RealisationsSection = () => {
             </div>
           ))}
         </div>
-
-        {/* --- Bouton Voir plus --- */}
         <div className="mt-8 text-center">
           <Link
             to="/Portfolio"

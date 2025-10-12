@@ -2,7 +2,7 @@ import {BlogCard} from "../components/BlogCard";
 import { useBlog } from "../context/BlogContext";
 
 export function Blogpage() {
-  const { articles } = useBlog(); // on récupère les articles depuis le contexte
+  const { articles } = useBlog(); 
 
   return (
     <section className="min-h-screen bg-white py-16 px-6 md:px-16">

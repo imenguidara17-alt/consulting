@@ -1,4 +1,3 @@
-// src/context/BlogContext.tsx
 import  { createContext, useContext, type ReactNode } from "react";
 import blog1 from "../Assets/images/blog1.jpeg";
 import blog2 from "../Assets/images/blog2.jpg";
@@ -6,16 +5,12 @@ import blog3 from "../Assets/images/blog3.jpg";
 import blog4 from "../Assets/images/blog4.png";
 import blog5 from "../Assets/images/blog5.jpg";
 import blog6 from "../Assets/images/blog6.jpg";
-
-// Type de l'article
 type Article = {
   image: string;
   category: string;
   title: string;
   description: string;
 };
-
-// Données des articles
 const articlesData: Article[] = [
   {
     image: blog1,
@@ -60,11 +55,7 @@ const articlesData: Article[] = [
       "Les meilleures pratiques pour améliorer votre visibilité sur Google et attirer un trafic qualifié.",
   },
 ];
-
-// Création du contexte
 const BlogContext = createContext<{ articles: Article[] }>({ articles: [] });
-
-// Fonction BlogContext qui englobe le provider et le hook
 export function Blog({ children }: { children: ReactNode }) {
   return (
     <BlogContext.Provider value={{ articles: articlesData }}>
@@ -72,6 +63,4 @@ export function Blog({ children }: { children: ReactNode }) {
     </BlogContext.Provider>
   );
 }
-
-// Hook pour récupérer les articles
 export const useBlog = () => useContext(BlogContext);
